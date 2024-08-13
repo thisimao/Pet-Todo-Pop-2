@@ -13,9 +13,20 @@
             background-color: black;
             color: white;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
         }
 
         .form-container {
@@ -36,17 +47,19 @@
         .form-container input[type="email"],
         .form-container input[type="password"] {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin-bottom: 15px;
             border: none;
             border-radius: 5px;
             font-size: 16px;
             box-sizing: border-box;
+            background-color: #333;
+            color: white;
         }
 
         .form-container input[type="submit"] {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             background-color: #28a745;
             color: white;
             border: none;
@@ -68,6 +81,10 @@
 
 <body>
 
+    <header>
+        <img src="logo.png" alt="Logo">
+    </header>
+
     <div class="form-container">
         <h2>Cadastro</h2>
         <form>
@@ -75,6 +92,9 @@
             <input type="email" placeholder="E-mail" required>
             <input type="password" placeholder="Senha" required>
             <input type="password" placeholder="Confirme sua Senha" required>
+            <input type="text" placeholder="Endereço" required>
+            <input type="text" placeholder="Cidade" required>
+            <input type="text" placeholder="Telefone" required>
             <input type="submit" value="Cadastrar">
         </form>
     </div>
@@ -82,3 +102,4 @@
 </body>
 
 </html>
+
